@@ -3,7 +3,7 @@ import { UilPhone, UilEnvelopeAlt } from '@iconscout/react-unicons'
 import { Link } from 'react-scroll'
 import Hero from './Hero'
 import { ReactComponent as Logo } from '../../assets/logo.svg'
-import {UilBars, UilMultiply } from '@iconscout/react-unicons'
+import { UilBars, UilMultiply } from '@iconscout/react-unicons'
 const Header = () => {
   const [opened, setOpened] = React.useState(false)
   const linkData = [
@@ -68,20 +68,20 @@ const Header = () => {
       </div>
 
 
-      <div className="w-full h-[5rem] flex  items-center justify-end ">
-          <div className="w-[85%] mx-auto gap-[1rem] flex   flex-row items-center justify-end text-black md:px-8">
-            <div className='h-[6rem] object-contain w-[6rem]'>
-              <Logo className='h-full w-full' />
-            </div>
+      <div className=" lg:hidden w-full h-[5rem] flex  items-center justify-end ">
+        <div className="w-[85%] mx-auto gap-[1rem] flex   flex-row items-center justify-end text-black md:px-8">
+          <div className='h-[6rem] object-contain w-[6rem]'>
+            <Logo className='h-full w-full' />
+          </div>
 
-            <div className="w-full mx-auto gap-[1rem] flex   flex-row items-center justify-end text-black md:px-8">
+          <div className="w-full mx-auto gap-[1rem] flex   flex-row items-center justify-end text-black md:px-8">
 
-              <button className='z-[9999999]' onClick={()=>{setOpened(!opened)}}>
-             { opened ? <UilMultiply className='fixed right-[2.5rem] fill-white' />:<UilBars/>}
-              </button>
-            </div>
+            <button className='z-[9999999]' onClick={() => { setOpened(!opened) }}>
+              {opened ? <UilMultiply className='fixed right-[2.5rem] fill-white' /> : <UilBars />}
+            </button>
+          </div>
 
-            {/* <div className=' w-[80%] bg-blue-500 gap-2 items-center justify-start flex flex-row lg:h-[2rem]'>
+          {/* <div className=' w-[80%] bg-blue-500 gap-2 items-center justify-start flex flex-row lg:h-[2rem]'>
               <UilPhone />
               <p>Tel: 888.688.6822 </p>
             </div>
@@ -89,10 +89,10 @@ const Header = () => {
               <UilEnvelopeAlt />
               <p>contact@siellamedical.com </p>
             </div> */}
-          </div>
         </div>
-      { opened && <div className='flex lg:hidden fixed top-0 flex-col bg-blue-500/20 backdrop-blur-xl  left-0 right-0 bottom-0 z-[10] w-[100%] min-h-[100%]  items-center justify-between'>
-        
+      </div>
+      {opened && <div className='flex lg:hidden fixed top-0 flex-col bg-blue-500/20 backdrop-blur-xl  left-0 right-0 bottom-0 z-[10] w-[100%] min-h-[100%]  items-center justify-between'>
+
 
         <div className='h-[100%]  w-full flex flex-col items-center justify-center gap-[3rem]'>
           {linkData.map((item, i) => {
@@ -106,7 +106,7 @@ const Header = () => {
 
       </div>}
 
-      
+
 
 
       <Hero />
