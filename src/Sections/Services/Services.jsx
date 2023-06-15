@@ -19,7 +19,7 @@ const Services = () => {
     },
   ]
   return (
-    <div className=' font-montserrat bg-red-500  w-full gap-[3rem] flex flex-col items-center justify-center'>
+    <div className=' font-montserrat   w-full gap-[3rem] flex flex-col items-center justify-center'>
       <div className='h-[10rem] bg-blue-950 flex flex-col items-center justify-center'>
         <div><p className='text-4xl font-montserrat'>Who We Serve</p></div>
       </div>
@@ -28,7 +28,7 @@ const Services = () => {
 
         {serviceData.map((service, i) => {
           return (
-            <div key={i} className='  text-center  rounded-md bg-yellow-400  gap-[1.4rem] items-center justify-center w-[90%] sm:w-[50%] lg:w-[70%] xl:w-[25.75rem] h-full sm:h-[25rem] flex flex-col'>
+            <div key={i} className='  text-center  rounded-md bg-yellow-500  gap-[1.4rem] items-center justify-center w-[90%] sm:w-[50%] lg:w-[70%] xl:w-[25.75rem] h-full sm:h-[25rem] flex flex-col'>
               <img className='h-[6rem]' src={`../${service.icon}`} />
               <h2 className='text-2xl  '>{service.title.toUpperCase()}</h2>
               <div className='w-[90%]'>     <p className='text-lg font-normal'>{service.desc}</p></div>
