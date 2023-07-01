@@ -1,51 +1,29 @@
 export const data = 
 [
 {
-    title:'',
-    description:'img',
-    link:'Learn More'
-},
-{
-    title:'',
-    description:'img',
+    title:'Companion Care',
+    description:'Help with light housekeeping,grocery shopping,transportation...',
     link:'Learn More'
     
 },
 {
-    title:'',
-    description:'img',
+    title:'Personal Care',
+    description:'There for physical assistance,hygiene,mobility..',
     link:'Learn More'
     
 },
 {
-    title:'',
-    description:'img',
+    title:'Nursing Services',
+    description:'In-Home medical care,ostomy care...',
     link:'Learn More'
     
 },
 {
-    title:'',
-    description:'img',
+    title:'Special Needs',
+    description:'Support for conditions like dementia',
     link:'Learn More'
     
 },
-{
-    title:'',
-    description:'img',
-    link:'Learn More'
-    
-},
-{
-    title:'',
-    description:'img',
-    link:'Learn More'
-    
-},
-{
-    title:'',
-    description:'img',
-    link:'Learn More'
-    
-},
+
 ]
 

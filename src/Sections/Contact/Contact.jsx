@@ -96,8 +96,8 @@ const Contact = () => {
                   {radioData.map((item, i) => {
                     return (
                       <div key={i} className="">
-                        <label className="w-[25%]  sm:w-[50%]">
-                          <input name={item} id={item} className='mr-2 wid ' type="checkbox" />
+                        <label className="w-[25%] cursor-pointer sm:w-[50%]">
+                          <input name={item} id={item} className='mr-2 cursor-pointer' type="checkbox" />
                           {item}
                         </label>
                       </div>
@@ -114,7 +114,7 @@ const Contact = () => {
                   Comments
                 </label>
                 <div className="mt-2">
-                  <textarea className='rounded-sm h-4 w-[20rem] sm:h-[4rem]  sm:w-[23rem] lg:w-[36rem] lg:h-[6rem] xl:h-[12rem] xl:w-[45rem]' name="" id="" ></textarea>
+                  <textarea className='rounded-sm  w-[20rem] h-[6rem] sm:h-[4rem]  text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pl-4 focus:ring-[.3px] focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6  sm:w-[23rem] lg:w-[36rem] lg:h-[6rem] xl:h-[12rem] xl:w-[45rem]' name="" id="" ></textarea>
                 </div>
               </div>
 

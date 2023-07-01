@@ -1,14 +1,23 @@
 import './App.css'
-import { Header, Contact, About, Services, Footer } from './Sections/index'
+import { Home, Jobs, Register, Service_Details } from './Pages/index'
+import { Header, Footer } from './Sections/index'
+import { Route, Routes } from 'react-router-dom'
 function App() {
 
   return (
-    <div className=' font-montserrat gap-[2rem]  flex items-center flex-col  justify-center'>
-      <Header />
-      <Services />
-      <About />
-      <Contact />
-      <Footer />
+
+    <div>
+      <Header/>
+     <div>
+     <Routes>
+        <Route element={<Home/>} path='/' >
+          <Route element={<Service_Details/>} path=':Services' />
+        </Route>
+        <Route element={<Jobs/>} path='/Jobs' />
+        <Route element={<Register/>} path='/Register' />
+      </Routes>
+     </div>
+     <Footer/>
     </div>
   )
 }
